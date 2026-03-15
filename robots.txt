@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://offline-ai-device.com/sitemap.xml
