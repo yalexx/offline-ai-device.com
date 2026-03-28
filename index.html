@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Offline AI Device — AI That Works Without Internet</title>
-<meta name="description" content="The offline AI device that runs completely without internet. Whisper, Llama, Kokoro — all on-device. Perfect for sensitive data and remote locations.">
-<meta name="keywords" content="offline ai device, no internet ai, air-gapped ai device, disconnected ai, local only ai hardware">
+<title>Offline AI Device — Run AI With Zero Internet | ClawBox</title>
+<meta name="description" content="Offline AI device that runs Llama, Whisper, and Kokoro with zero internet. NVIDIA Jetson Orin Nano, 67 TOPS, 15W. Perfect for air-gapped and remote use.">
+<meta name="keywords" content="offline ai device, no internet ai, air-gapped ai device, disconnected ai, local only ai hardware, offline llm, offline voice ai">
 <link rel="canonical" href="https://offline-ai-device.com/">
-<meta property="og:title" content="Offline AI Device — AI That Works Without Internet">
-<meta property="og:description" content="The offline AI device that runs completely without internet. Whisper, Llama, Kokoro — all on-device. Perfect for sensitive data and remote locations.">
+<meta property="og:title" content="Offline AI Device — Run AI With Zero Internet | ClawBox">
+<meta property="og:description" content="Offline AI device that runs Llama, Whisper, and Kokoro with zero internet. NVIDIA Jetson Orin Nano, 67 TOPS, 15W. Perfect for air-gapped and remote use.">
 <meta property="og:url" content="https://offline-ai-device.com/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Offline AI Device — AI That Works Without Internet">
-<meta name="twitter:description" content="The offline AI device that runs completely without internet. Whisper, Llama, Kokoro — all on-device. Perfect for sensitive data and remote locations.">
+<meta name="twitter:title" content="Offline AI Device — Run AI With Zero Internet | ClawBox">
+<meta name="twitter:description" content="Offline AI device that runs Llama, Whisper, and Kokoro with zero internet. NVIDIA Jetson Orin Nano, 67 TOPS, 15W.">
 <meta name="robots" content="index, follow">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "ClawBox", "description": "The offline AI device that runs completely without internet. Whisper, Llama, Kokoro \u2014 all on-device. Perfect for sensitive data and remote locations.", "brand": {"@type": "Brand", "name": "OpenClaw"}, "image": "https://openclawhardware.dev/clawbox-1.webp", "url": "https://openclawhardware.dev/", "offers": {"@type": "Offer", "price": "549", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"Offline AI device powered by NVIDIA Jetson Orin Nano. Runs Llama, Whisper, and Kokoro with zero internet connection required. 67 TOPS, 15W, 512GB NVMe.","brand":{"@type":"Brand","name":"OpenClaw"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://openclawhardware.dev/","offers":{"@type":"Offer","price":"549","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can an offline AI device really run without any internet?","acceptedAnswer":{"@type":"Answer","text":"Yes. ClawBox runs all AI models directly on the NVIDIA Jetson Orin Nano GPU. Language models, speech recognition, and text-to-speech all execute locally on the 67 TOPS processor with 8GB unified memory. No cloud connection is needed for any core AI function."}},{"@type":"Question","name":"Which AI models work on an offline AI device?","acceptedAnswer":{"@type":"Answer","text":"ClawBox runs Llama 3.1 8B for text generation at 15 tokens/sec, Whisper for speech-to-text transcription, Kokoro for natural text-to-speech, and Stable Diffusion for image generation. All models are stored on the 512GB NVMe SSD."}},{"@type":"Question","name":"Is an offline AI device secure enough for sensitive data?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Since no data ever leaves the device, an offline AI device provides true air-gap security. Your documents, conversations, and voice data stay on your local hardware. There are no API calls, no telemetry, and no cloud processing."}}]}</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -43,11 +44,18 @@ nav a{margin-left:1.5rem;color:var(--muted);font-size:.9rem}nav a:hover{color:va
 .section-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;margin-bottom:.75rem}
 .section-title span{color:var(--accent)}
 .section-sub{color:var(--muted);margin-bottom:2.5rem;max-width:600px}
+.content-block{color:var(--muted);font-size:.95rem;line-height:1.8;max-width:800px;margin:0 auto 2rem}
+.content-block h2{color:var(--text);font-size:1.3rem;font-weight:700;margin:2rem 0 .75rem}
+.content-block h3{color:var(--text);font-size:1.1rem;font-weight:700;margin:1.5rem 0 .5rem}
+.content-block p{margin-bottom:1rem}
+.content-block ul{margin:0 0 1rem 1.5rem}
+.content-block li{margin-bottom:.4rem}
 .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 .feat{background:var(--bg2);border-radius:12px;padding:1.5rem;border:1px solid var(--border);display:flex;align-items:flex-start;gap:1rem;transition:border-color .2s}
 .feat:hover{border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
 .feat-icon{font-size:1.5rem;flex-shrink:0}
 .feat div{color:var(--muted);font-size:.95rem;line-height:1.5}
+.feat h3{color:var(--text);font-size:.95rem;font-weight:700;margin-bottom:.3rem}
 .specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}
 .spec{background:var(--bg2);border-radius:12px;padding:1.5rem;border:1px solid var(--border);text-align:center}
 .spec .val{font-size:1.8rem;font-weight:800;color:var(--accent)}
@@ -92,7 +100,7 @@ nav{display:none}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');</script>
-<meta name="revised" content="2026-03-15">
+<meta name="revised" content="2026-03-28">
 </head>
 <body>
 
@@ -100,53 +108,83 @@ nav{display:none}
   <div class="logo">Offline AI Device</div>
   <nav>
     <a href="#features">Features</a>
+    <a href="#why-offline">Why Offline</a>
     <a href="#specs">Specs</a>
-    <a href="#how">How It Works</a>
+    <a href="#faq">FAQ</a>
     <a href="https://openclawhardware.dev/" target="_blank">Buy Now</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="badge">✨ Powered by NVIDIA Jetson Orin Nano</div>
-  <h1><span>AI</span> That Runs Without Any Internet Connection</h1>
-  <p>The offline AI device that runs completely without internet. Whisper, Llama, Kokoro — all on-device. Perfect for sensitive data and remote locations.</p>
+  <h1>The <span>Offline AI Device</span> That Needs Zero Internet</h1>
+  <p>Run language models, voice recognition, and text-to-speech entirely on local hardware. No cloud. No subscriptions. No data leaving your building. Ever.</p>
   <div>
     <a href="https://openclawhardware.dev/self-hosted-ai" target="_blank" class="cta-btn">Get ClawBox — €549 →</a>
-    <a href="#features" class="cta-sec">See how it works ↓</a>
+    <a href="#why-offline" class="cta-sec">Why go offline? ↓</a>
   </div>
-  <p class="micro"><span>✓ 30-day money-back guarantee</span> · Free shipping EU · 5-min setup</p>
+  <p class="micro"><span>✓ 30-day money-back guarantee</span> · Free EU shipping · 5-min setup</p>
 </section>
 
 <div class="trust">
   <div class="trust-items">
     <span>⚡ 67 TOPS NVIDIA</span>
     <span>💾 512GB NVMe SSD</span>
-    <span>💡 20W Power Draw</span>
+    <span>💡 15W Power Draw</span>
     <span>🌍 Ships Worldwide</span>
-    <span>🔒 100% Private</span>
+    <span>🔒 True Air-Gap</span>
   </div>
 </div>
 
 <section class="section" id="features">
-  <h2 class="section-title">Why <span>Offline AI Device</span></h2>
-  <p class="section-sub">The offline AI device that runs completely without internet. Whisper, Llama, Kokoro — all on-device. Perfect for sensiti...</p>
+  <h2 class="section-title">Why Choose an <span>Offline AI Device</span></h2>
+  <p class="section-sub">Cloud AI sends every prompt to remote servers. An offline AI device keeps everything on hardware you physically control.</p>
   <div class="feats">
-<div class="feat"><div class="feat-icon">📵</div><div>Zero Internet Required</div></div>
-<div class="feat"><div class="feat-icon">🎤</div><div>Offline Voice AI</div></div>
-<div class="feat"><div class="feat-icon">🦙</div><div>Local LLM</div></div>
-<div class="feat"><div class="feat-icon">🔐</div><div>Complete Air-Gap</div></div>
+    <div class="feat"><div class="feat-icon">📵</div><div><h3>Zero Internet Required</h3>Unplug your ethernet cable entirely. Every AI model runs on the local GPU — no API calls, no cloud fallback, no connectivity dependency.</div></div>
+    <div class="feat"><div class="feat-icon">🎤</div><div><h3>Offline Voice AI</h3>Whisper speech-to-text and Kokoro text-to-speech run directly on-device. Transcribe meetings, dictate notes, or build voice interfaces — all without internet.</div></div>
+    <div class="feat"><div class="feat-icon">🦙</div><div><h3>Local LLM at 15 tok/s</h3>Llama 3.1 8B runs natively on the Jetson Orin Nano at 15 tokens per second. Ask questions, summarize documents, draft emails — completely offline.</div></div>
+    <div class="feat"><div class="feat-icon">🔐</div><div><h3>True Air-Gap Security</h3>No telemetry. No analytics. No phone-home. Your conversations and documents never touch a network. Physical isolation by design.</div></div>
+    <div class="feat"><div class="feat-icon">🏔️</div><div><h3>Works Anywhere</h3>Remote cabins, ships at sea, classified facilities, rural clinics. If you have a power outlet, you have AI. No cell signal needed.</div></div>
+    <div class="feat"><div class="feat-icon">⚡</div><div><h3>15W Always-On</h3>Runs 24/7 on less power than a laptop charger. Perfect for continuous operation in off-grid setups with solar or battery power.</div></div>
+  </div>
+</section>
+
+<section class="section" id="why-offline">
+  <div class="content-block">
+    <h2>What Is an Offline AI Device and Who Needs One?</h2>
+    <p>An offline AI device is a self-contained computer that runs artificial intelligence models entirely on local hardware, with no internet connection required. Unlike cloud-based AI services like ChatGPT or Claude that send your data to remote servers for processing, an offline AI device performs all computation on its own GPU and memory. The result is an AI assistant that works in complete isolation from the internet.</p>
+
+    <p>This matters more than most people realize. Every time you type a prompt into a cloud AI service, that text travels across the internet to a data center, gets processed on shared infrastructure, and the response travels back. Your prompts, documents, and conversations are stored on servers you don't control. For personal use, that trade-off might be acceptable. For businesses handling sensitive data, medical records, legal documents, or classified information, it's a non-starter.</p>
+
+    <h3>Real-World Use Cases for Offline AI</h3>
+    <p><a href="https://openclawhardware.dev/" target="_blank">ClawBox</a> is an offline AI device built on the NVIDIA Jetson Orin Nano platform. It ships pre-configured with OpenClaw and a full stack of AI models that run without any network connection:</p>
+    <ul>
+      <li><strong>Law firms and legal departments</strong> — Summarize contracts, extract clauses, and draft responses without client data leaving the building. Attorney-client privilege stays intact.</li>
+      <li><strong>Healthcare and medical offices</strong> — Transcribe patient notes with Whisper, generate reports, and query medical literature. HIPAA compliance is simpler when data never touches the cloud.</li>
+      <li><strong>Remote and off-grid locations</strong> — Research stations, ships, rural clinics, and expedition teams get full AI capability with just a power outlet. No satellite uplink required.</li>
+      <li><strong>Government and defense</strong> — Air-gapped environments where classified or sensitive information must never leave the network perimeter. Physical isolation provides the strongest guarantee.</li>
+      <li><strong>Journalists and activists</strong> — Protect sources by analyzing documents on hardware that cannot be remotely accessed. No subpoena can retrieve data from a server that was never used.</li>
+      <li><strong>Creative professionals</strong> — Writers, researchers, and analysts who want AI assistance without their unpublished work entering training datasets.</li>
+    </ul>
+
+    <h3>How ClawBox Works as an Offline AI Device</h3>
+    <p>ClawBox runs the full AI stack locally: Llama 3.1 8B for text generation and reasoning, Whisper for speech-to-text transcription, Kokoro for natural-sounding text-to-speech, and Stable Diffusion for image generation. All models are pre-loaded on the 512GB NVMe SSD. The NVIDIA Jetson Orin Nano's 67 TOPS of AI compute handles inference at 15 tokens per second — responsive enough for real-time conversation.</p>
+
+    <p>Setup takes five minutes. Plug in power, open your browser to clawbox.local, and scan a QR code to connect via Telegram, WhatsApp, or Discord. If you want true air-gap operation, skip the messaging integration entirely and use the local web interface. The device draws just 15 watts — less than a standard LED light bulb — making it viable for continuous operation on solar panels or battery backup systems.</p>
+
+    <p>The key difference between ClawBox and a DIY offline setup: ClawBox works out of the box. Building your own offline AI device from a Jetson board means hours of driver installation, model optimization, quantization tuning, and service configuration. ClawBox ships with everything pre-configured and tested, so you get a working offline AI device in the time it takes to unbox it.</p>
   </div>
 </section>
 
 <section class="section" id="specs" style="background:var(--bg2);max-width:100%;padding:4rem 2rem">
   <div style="max-width:1000px;margin:0 auto">
   <h2 class="section-title">Hardware <span>Specs</span></h2>
-  <p class="section-sub">Built on NVIDIA Jetson Orin Nano Super — the platform designed for edge AI.</p>
+  <p class="section-sub">Built on NVIDIA Jetson Orin Nano Super — designed for edge AI at the lowest power envelope.</p>
   <div class="specs">
     <div class="spec"><div class="val">67</div><div class="lbl">TOPS AI Performance</div></div>
     <div class="spec"><div class="val">8GB</div><div class="lbl">LPDDR5 Unified Memory</div></div>
     <div class="spec"><div class="val">512GB</div><div class="lbl">NVMe SSD Storage</div></div>
-    <div class="spec"><div class="val">20W</div><div class="lbl">Power Consumption</div></div>
+    <div class="spec"><div class="val">15W</div><div class="lbl">Power Consumption</div></div>
     <div class="spec"><div class="val">15</div><div class="lbl">Tokens/sec (Llama 8B)</div></div>
     <div class="spec"><div class="val">€549</div><div class="lbl">One-Time Price</div></div>
   </div>
@@ -157,16 +195,16 @@ nav{display:none}
   <h2 class="section-title">Set Up in <span>5 Minutes</span></h2>
   <p class="section-sub">No Linux knowledge required. No Docker. No terminal. Just plug in and go.</p>
   <div class="steps">
-    <div class="step"><h3>Unbox & Power On</h3><p>Connect power and ethernet (or WiFi). Device boots automatically.</p></div>
-    <div class="step"><h3>Open clawbox.local</h3><p>Navigate to clawbox.local in your browser — no IP address needed.</p></div>
-    <div class="step"><h3>Scan QR Code</h3><p>Scan with your phone to connect Telegram, WhatsApp, or Discord.</p></div>
-    <div class="step"><h3>Start Automating</h3><p>Send a message and your AI assistant is ready to work for you.</p></div>
+    <div class="step"><h3>Unbox & Power On</h3><p>Connect power and ethernet (or WiFi). The offline AI device boots automatically in under 30 seconds.</p></div>
+    <div class="step"><h3>Open clawbox.local</h3><p>Navigate to clawbox.local in your browser. No IP address hunting — mDNS handles discovery.</p></div>
+    <div class="step"><h3>Scan QR Code</h3><p>Connect via Telegram, WhatsApp, or Discord. Or use the local web UI for full air-gap operation.</p></div>
+    <div class="step"><h3>Start Working</h3><p>All AI models are pre-loaded. Ask questions, transcribe audio, generate text — fully offline from moment one.</p></div>
   </div>
 </section>
 
 <section class="section">
   <h2 class="section-title"><span>Compare</span> Your Options</h2>
-  <p class="section-sub">See why ClawBox wins against cloud AI, DIY builds, and alternatives.</p>
+  <p class="section-sub">See how an offline AI device stacks up against cloud services and DIY builds.</p>
   <div class="cmp">
   <table class="cmp-tbl">
     <thead>
@@ -174,34 +212,52 @@ nav{display:none}
         <th>Feature</th>
         <th class="hi">ClawBox</th>
         <th>Cloud AI (ChatGPT+)</th>
-        <th>DIY Build</th>
+        <th>DIY Jetson Build</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>Price</td><td class="hi">€549 one-time</td><td>€20-50/month</td><td>€400-900 + time</td></tr>
-      <tr><td>Privacy</td><td class="hi"><span class="ck">✓</span> 100% local</td><td><span class="cx">✗</span> Cloud data</td><td><span class="ck">✓</span> Local</td></tr>
-      <tr><td>Setup time</td><td class="hi">5 minutes</td><td>Instant (cloud)</td><td>10-20 hours</td></tr>
-      <tr><td>24/7 operation</td><td class="hi"><span class="ck">✓</span> Always on</td><td><span class="cx">✗</span> Manual</td><td>Depends</td></tr>
-      <tr><td>Power draw</td><td class="hi">20W</td><td>N/A</td><td>80-200W</td></tr>
-      <tr><td>Offline capable</td><td class="hi"><span class="ck">✓</span> Yes</td><td><span class="cx">✗</span> No</td><td>Maybe</td></tr>
+      <tr><td>Price</td><td class="hi">€549 one-time</td><td>€20-50/month forever</td><td>€400-900 + 10-20h labor</td></tr>
+      <tr><td>Offline capable</td><td class="hi"><span class="ck">✓</span> 100% offline</td><td><span class="cx">✗</span> Internet required</td><td><span class="ck">✓</span> With effort</td></tr>
+      <tr><td>Data privacy</td><td class="hi"><span class="ck">✓</span> Air-gapped</td><td><span class="cx">✗</span> Data on their servers</td><td><span class="ck">✓</span> If configured right</td></tr>
+      <tr><td>Setup time</td><td class="hi">5 minutes</td><td>Instant (but online)</td><td>10-20 hours</td></tr>
+      <tr><td>24/7 always-on</td><td class="hi"><span class="ck">✓</span> 15W idle</td><td><span class="cx">✗</span> Manual sessions</td><td>Depends on build</td></tr>
+      <tr><td>Voice AI offline</td><td class="hi"><span class="ck">✓</span> Whisper + Kokoro</td><td><span class="cx">✗</span> Cloud only</td><td>Manual setup</td></tr>
+      <tr><td>Support included</td><td class="hi"><span class="ck">✓</span> Email + community</td><td><span class="ck">✓</span> Limited</td><td><span class="cx">✗</span> You're alone</td></tr>
     </tbody>
   </table>
   </div>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Common <span>Questions</span></h2>
+<section class="section" id="faq">
+  <h2 class="section-title">Offline AI Device <span>FAQ</span></h2>
   <div>
-<div class="faq-item"><div class="faq-q">❓ Can it run 100% offline?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-<div class="faq-item"><div class="faq-q">❓ Which models work offline?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-<div class="faq-item"><div class="faq-q">❓ Does voice recognition work offline?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
+    <div class="faq-item">
+      <div class="faq-q">❓ Can an offline AI device really run without any internet?</div>
+      <div class="faq-a">Yes. ClawBox runs all AI models directly on the NVIDIA Jetson Orin Nano GPU. Language models (Llama 3.1 8B), speech recognition (Whisper), and text-to-speech (Kokoro) all execute locally on the 67 TOPS processor with 8GB unified memory. You can unplug your ethernet cable completely and every AI function continues to work. No cloud connection is needed for any core feature.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">❓ Which AI models work on an offline AI device?</div>
+      <div class="faq-a">ClawBox ships pre-loaded with Llama 3.1 8B for text generation and reasoning (15 tokens/sec), Whisper for accurate speech-to-text transcription, Kokoro for natural-sounding text-to-speech, and Stable Diffusion for image generation. All models are optimized for the Jetson Orin Nano and stored on the 512GB NVMe SSD. You can also load additional GGUF-format models via the web interface.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">❓ Is an offline AI device secure enough for sensitive data?</div>
+      <div class="faq-a">An offline AI device provides the strongest possible data protection — true air-gap security. Your documents, conversations, and voice recordings never leave the physical device. There are no API calls, no telemetry, no analytics, and no cloud processing. This makes ClawBox suitable for legal, medical, government, and other environments where data confidentiality is non-negotiable.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">❓ How does an offline AI device compare to running AI on a laptop?</div>
+      <div class="faq-a">A laptop can run AI models offline, but it draws 60-100W, gets hot, and you can't leave it running 24/7 without wearing out the battery and fans. ClawBox draws just 15W, runs silently, and is designed for continuous always-on operation. It's a dedicated offline AI device rather than a repurposed general computer — purpose-built hardware for a specific job.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">❓ Can I use an offline AI device with solar or battery power?</div>
+      <div class="faq-a">Absolutely. At 15W, ClawBox can run on a small solar panel and battery bank. A 100W solar panel with a 200Wh battery provides enough power for 12+ hours of operation even on cloudy days. This makes it ideal for remote research stations, boats, RVs, and off-grid cabins where reliable AI is needed without grid power.</div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="cta-box">
-    <h2>Ready to Get Your Own <span style="color:var(--accent)">Offline AI Device</span>?</h2>
-    <p>€549 one-time. 30-day money-back guarantee. Ships in 1-3 business days.</p>
+    <h2>Get Your <span style="color:var(--accent)">Offline AI Device</span> Today</h2>
+    <p>€549 one-time. No subscriptions. No cloud. 30-day money-back guarantee. Ships in 1-3 business days.</p>
     <a href="https://openclawhardware.dev/self-hosted-ai" target="_blank" class="cta-btn" style="font-size:1.1rem;padding:1rem 3rem">Order ClawBox Now →</a>
     <p style="margin-top:1rem;font-size:.85rem;color:var(--muted)">Questions? Email <a href="mailto:yanko@idrobots.com">yanko@idrobots.com</a></p>
   </div>
@@ -214,16 +270,27 @@ nav{display:none}
 <h2 style="font-size:1.4rem;font-weight:700;margin-bottom:16px;color:#e2e8f0">ClawBox Network</h2>
 <p style="color:#94a3b8;margin-bottom:16px;font-size:0.9rem">Explore the ClawBox ecosystem — AI hardware, guides, and resources:</p>
 <ul style="columns:2;column-gap:24px;list-style:none;padding:0">
-<li><a href="http://jetson-ai-assistant.com/" title="jetson ai assistant — ClawBox AI Hardware">jetson ai assistant</a></li><li><a href="http://ai-home-server.com/" title="ai home server — ClawBox AI Hardware">ai home server</a></li><li><a href="http://ai-desktop-assistant.com/" title="ai desktop assistant — ClawBox AI Hardware">ai desktop assistant</a></li><li><a href="http://openclaw-docker.com/" title="openclaw docker — ClawBox AI Hardware">openclaw docker</a></li><li><a href="http://dedicated-ai-hardware.com/" title="dedicated ai hardware — ClawBox AI Hardware">dedicated ai hardware</a></li><li><a href="http://ai-agent-hardware.com/" title="ai agent hardware — ClawBox AI Hardware">ai agent hardware</a></li><li><a href="http://clawbox.world/" title="clawbox world — ClawBox AI Hardware">clawbox world</a></li><li><a href="http://openclaw-device.com/" title="openclaw device — ClawBox AI Hardware">openclaw device</a></li><li><a href="http://clawboxpro.com/" title="clawboxpro — ClawBox AI Hardware">clawboxpro</a></li><li><a href="http://clawboxinstall.com/" title="clawboxinstall — ClawBox AI Hardware">clawboxinstall</a></li><li><a href="http://openclaw-tutorial.com/" title="openclaw tutorial — ClawBox AI Hardware">openclaw tutorial</a></li><li><a href="http://clawbox.one/" title="clawbox one — ClawBox AI Hardware">clawbox one</a></li>
+<li><a href="https://jetson-ai-assistant.com/" title="jetson ai assistant — ClawBox AI Hardware">jetson ai assistant</a></li>
+<li><a href="https://ai-home-server.com/" title="ai home server — ClawBox AI Hardware">ai home server</a></li>
+<li><a href="https://ai-desktop-assistant.com/" title="ai desktop assistant — ClawBox AI Hardware">ai desktop assistant</a></li>
+<li><a href="https://dedicated-ai-hardware.com/" title="dedicated ai hardware — ClawBox AI Hardware">dedicated ai hardware</a></li>
+<li><a href="https://ai-agent-hardware.com/" title="ai agent hardware — ClawBox AI Hardware">ai agent hardware</a></li>
+<li><a href="https://edge-ai-hardware.com/" title="edge ai hardware — ClawBox AI Hardware">edge ai hardware</a></li>
+<li><a href="https://run-ai-locally.com/" title="run ai locally — ClawBox AI Hardware">run ai locally</a></li>
+<li><a href="https://no-cloud-ai.com/" title="no cloud ai — ClawBox AI Hardware">no cloud ai</a></li>
+<li><a href="https://private-ai-hardware.com/" title="private ai hardware — ClawBox AI Hardware">private ai hardware</a></li>
+<li><a href="https://self-hosted-ai.com/" title="self hosted ai — ClawBox AI Hardware">self hosted ai</a></li>
+<li><a href="https://personal-ai-server.com/" title="personal ai server — ClawBox AI Hardware">personal ai server</a></li>
+<li><a href="https://low-power-ai.com/" title="low power ai — ClawBox AI Hardware">low power ai</a></li>
 <li><a href="https://openclawhardware.dev/" title="ClawBox Official Store — Buy AI Hardware"><strong>🏠 Official Store — openclawhardware.dev</strong></a></li>
 </ul>
 </section>
 <section style="padding:25px 20px;max-width:800px;margin:0 auto">
 <h2 style="font-size:1.1rem;font-weight:700;color:#e2e8f0;margin-bottom:10px">ClawBox vs Mac Mini for AI</h2>
-<p style="color:#94a3b8;font-size:0.85rem">Thinking about a Mac Mini for OpenClaw? <a href="https://openclawhardware.dev/mac-mini-alternative" title="ClawBox vs Mac Mini 2026">Compare ClawBox vs Mac Mini</a> — €549 vs €699, 15W vs 65W, 67 TOPS NVIDIA AI compute. Full specs comparison.</p>
+<p style="color:#94a3b8;font-size:0.85rem">Thinking about a Mac Mini for offline AI? <a href="https://openclawhardware.dev/mac-mini-alternative" title="ClawBox vs Mac Mini 2026">Compare ClawBox vs Mac Mini</a> — €549 vs €699, 15W vs 65W, 67 TOPS NVIDIA AI compute. Full specs comparison.</p>
 </section>
 
-<p style="margin:1.5em 0 0.8em;font-size:0.95em;color:#718096;line-height:1.6;">Want to run AI locally without the setup headache? <a href="https://openclawhardware.dev/?utm_source=offline-ai-device.com&utm_medium=backlink&utm_campaign=offline-ai-device-com" target="_blank" rel="noopener">ClawBox</a> ships pre-loaded with OpenClaw.</p>
+<p style="margin:1.5em 0 0.8em;font-size:0.95em;color:#718096;line-height:1.6;">Want an offline AI device without the setup headache? <a href="https://openclawhardware.dev/?utm_source=offline-ai-device.com&utm_medium=backlink&utm_campaign=offline-ai-device-com" target="_blank" rel="noopener">ClawBox</a> ships pre-loaded with OpenClaw — ready to run offline from the moment you plug it in.</p>
 </footer>
 
 <div class="popup-overlay" id="redirectPopup">
@@ -254,15 +321,5 @@ if((window.innerHeight+window.scrollY)>=document.body.offsetHeight-100)showPopup
 },{passive:true});
 })();</script>
 
-<div class="related-resources" style="margin-top:2rem;padding:1rem;border-top:1px solid #eee;">
-<p><strong>Related Resources:</strong></p>
-<ul>
-<li><a href="https://edge-ai-hardware.com">edge-ai-hardware.com</a></li>
-<li><a href="https://home-ai-assistant.com">home-ai-assistant.com</a></li>
-<li><a href="https://diy-ai-assistant.com">diy-ai-assistant.com</a></li>
-<li><a href="https://local-ai-box.com">local-ai-box.com</a></li>
-<li><a href="https://personal-ai-server.com">personal-ai-server.com</a></li>
-</ul>
-</div>
-<div class="main-cta" style="margin:1rem 0;text-align:center;"><a href="https://openclawhardware.dev" style="display:inline-block;background:#2563eb;color:#fff;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:bold;">Buy ClawBox — €549</a></div></body>
+</body>
 </html>
